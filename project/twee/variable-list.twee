@@ -1,0 +1,38 @@
+:: List
+STORY OVERALL
+- $ knowledge: track BSD knowledge
+- $ dazai: track if met/not-met
+- $ time: track time of day
+- $ name: track name
+- $ health: track health
+- $ health_descriptor: track description
+
+EXPLORATION
+- $ exa_mHQ_b: track ballroom examination
+- $ exa_mHQ_bB: track biggerBallroom examination
+- $ exa_mHQ_corridor: track corridor examination
+    dump $ exa* at the end of location
+- $ gps: track orientation
+    [0] tracks room orientation
+    [1] tracks left/right/none orientation
+- $ moontouched: track moon existence
+
+INVENTORY
+- $ rashoumonThread: track rashoumonThread
+- $ mafiaSunglasses: track mafiaSunglasses
+- $ mimicCloak: track mimicCloak
+- $ graugeist: track Grau Geist
+- $ wear: track wear
+- $ inventory: track inventory
+    [0] tracks # objects -- not fragments!
+    [1-end] tracks: rashoumonThread, mafiaSunglasses, mimicCloak, graugeist
+- $ visitedInventory: track visitedInventory
+- $ fragment: track fragments
+    [0] tracks # fragments
+    [1] tracks fragment1
+    [2] tracks fragment2
+    [3] tracks fragment3
+    [4] tracks fragment4
+    [5] tracks fragment5
+    [6] tracks Book
+    [7] tracks fragment text
