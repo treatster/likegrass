@@ -16,7 +16,6 @@
     "build": "gulp build && tweego -f $npm_package_config_format -m src/modules/ --head=src/head-content.html -o dist/index.html project && opn dist/index.html",
     "testmode": "gulp build && tweego -f $npm_package_config_format -t -m src/modules/ --head=src/head-content.html -o dist/index.html project && opn dist/index.html",
     "tweegobuild": "tweego -f $npm_package_config_format -m src/modules/ --head=src/modules/head-content.html -o dist/index.html project",
-
     "build-win": "gulp build && tweego -f %npm_package_config_format% -m src/modules/ --head=src/head-content.html -o dist/build.html project && opn dist/build.html",
     "testmode-win": "gulp build && tweego -f %npm_package_config_format% -t -m src/modules/ --head=src/head-content.html -o dist/testmode.html project && opn dist/testmode.html",
     "tweegobuild-win": "tweego -f %npm_package_config_format% -m src/modules/ --head=src/head-content.html -o dist/index.html project",
@@ -30,8 +29,7 @@
   ],
   "author": "Chapel",
   "license": "Unlicense",
-  "dependencies": {
-  },
+  "dependencies": {},
   "directories": {
     "doc": "docs"
   },
