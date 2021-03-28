@@ -7,4 +7,8 @@ A free _Bungou Stray Dogs_ fan-game.
 
 **v0.0.1**
 
-[Play game online!](https://treatster.github.io/likegrass/)
+[Play the game online!](https://treatster.github.io/likegrass/)
+
+---
+
+Credit to [ChapelR](https://github.com/ChapelR/tweego-setup) for project set-up and to [Em Lazer-Walker](https://dev.to/lazerwalker/a-modern-developer-s-workflow-for-twine-4imp) for .yml GitHub Actions script.
