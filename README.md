@@ -11,4 +11,7 @@ A free _Bungou Stray Dogs_ fan-game.
 
 ---
 
-Credit to [Chapel](https://github.com/ChapelR/tweego-setup) for project set-up structure and macros, and to [Em Lazer-Walker](https://dev.to/lazerwalker/a-modern-developer-s-workflow-for-twine-4imp) for .yml GitHub Actions script.
+Credit:
+- [Chapel](https://github.com/ChapelR/tweego-setup): project set-up structure and macros
+- [Em Lazer-Walker](https://dev.to/lazerwalker/a-modern-developer-s-workflow-for-twine-4imp): .yml GitHub Actions script
+- [HiEv](https://qjzhvmqlzvoo5lqnrvuhmg-on.drv.tw/UInv/Sample_Code.html#Main%20Menu): macros and Javascript code
