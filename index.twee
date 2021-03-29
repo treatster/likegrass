@@ -721,7 +721,7 @@ Too far!
     [0] tracks room orientation
     [1] tracks left/right/none orientation
     */>
-<<set $exa = [[]]>>
+<<set $health = new Array(2).fill(-1)>>
 
 
 :: StoryCaption [nobr] {"position":"100,475","size":"100,100"}
@@ -737,14 +737,14 @@ Too far!
 <</if>>
 
 /*HEALTH*/
-<<if $health == 0>><<set $health_descriptor to "A SUCCESSFUL DEATH, CONGRATULATIONS">>
-    <<elseif $health lte 5>><<set $health_descriptor to "ONLY NEARLY DEAD">>
-    <<elseif $health lte 10>><<set $health_descriptor to "MERELY GRIEVOUSLY WOUNDED">>
-    <<elseif $health lte 15>><<set $health_descriptor to "DISASTROUSLY INJURED">>
-    <<elseif $health lte 20>><<set $health_descriptor to "HORRIBLY SLIGHTLY HURT">>
-    <<elseif $health lte 25>><<set $health_descriptor to "(UN)FORTUNATELY HEALTHY">>
+<<if $health[0] == 0>><<set $health[1] to "A SUCCESSFUL DEATH, CONGRATULATIONS">>
+    <<elseif $health[0] lte 5>><<set $health[1] to "ONLY NEARLY DEAD">>
+    <<elseif $health[0] lte 10>><<set $health[1] to "MERELY GRIEVOUSLY WOUNDED">>
+    <<elseif $health[0] lte 15>><<set $health[1] to "DISASTROUSLY INJURED">>
+    <<elseif $health[0] lte 20>><<set $health[1] to "HORRIBLY SLIGHTLY HURT">>
+    <<elseif $health[0] lte 25>><<set $health[1] to "(UN)FORTUNATELY HEALTHY">>
 <</if>>
-<<if def $health>><hr><<print $health_descriptor>><</if>>
+<<if $health[0] gte 0>><hr><<print $health[1]>><</if>>
 
 
 :: StorySubtitle [nobr] {"position":"225,475","size":"100,100"}
@@ -994,45 +994,5 @@ You check the magazine. You have
     .<br>
     <<link "Return" $return>><</link>> to your story.
 </center>
-
-
-:: List {"position":"475,600","size":"100,100"}
-STORY OVERALL
-- $ knowledge: track BSD knowledge
-- $ dazai: track if met/not-met
-- $ time: track time of day
-- $ name: track name
-- $ health: track health
-- $ health_descriptor: track description
-
-EXPLORATION
-- $ exa_mHQ_b: track ballroom examination
-- $ exa_mHQ_bB: track biggerBallroom examination
-- $ exa_mHQ_corridor: track corridor examination
-    dump $ exa* at the end of location
-- $ gps: track orientation
-    [0] tracks room orientation
-    [1] tracks left/right/none orientation
-- $ moontouched: track moon existence
-
-INVENTORY
-- $ rashoumonThread: track rashoumonThread
-- $ mafiaSunglasses: track mafiaSunglasses
-- $ mimicCloak: track mimicCloak
-- $ graugeist: track Grau Geist
-- $ wear: track wear
-- $ inventory: track inventory
-    [0] tracks # objects -- not fragments!
-    [1-end] tracks: rashoumonThread, mafiaSunglasses, mimicCloak, graugeist
-- $ visitedInventory: track visitedInventory
-- $ fragment: track fragments
-    [0] tracks # fragments
-    [1] tracks fragment1
-    [2] tracks fragment2
-    [3] tracks fragment3
-    [4] tracks fragment4
-    [5] tracks fragment5
-    [6] tracks Book
-    [7] tracks fragment text
 
 
