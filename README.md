@@ -5,7 +5,7 @@ A free _Bungou Stray Dogs_ fan-game.
 > 
 > Unsure of exactly who you are and what you're doing in this world you must nevertheless venture bravely forth into Yokohama's dark streets, oddly so much more dilapidated than you ever imagined.
 
-**v0.0.1**
+**v0.0.1 dev**
 
 [Play the game online!](https://treatster.github.io/likegrass/)
 

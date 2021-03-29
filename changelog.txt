@@ -1,0 +1,6 @@
+#changelog
+
+v0.0.1 dev
+- added Mimic HQ location
+- converted from Twine2 to twee
+- implemented $inventory, $fragment, $exa_*, $gps, $health arrays

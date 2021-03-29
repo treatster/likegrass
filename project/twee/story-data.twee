@@ -53,7 +53,9 @@ Like Grass
     [0] tracks room orientation
     [1] tracks left/right/none orientation
     */>
-<<set $exa = [[]]>>
+<<set $health = new Array(2).fill(-1)>>
+
+
 :: StoryCaption [nobr]
 /*INFO*/
 <<if def $name>><<print $name>><</if>>
@@ -67,14 +69,14 @@ Like Grass
 <</if>>
 
 /*HEALTH*/
-<<if $health == 0>><<set $health_descriptor to "A SUCCESSFUL DEATH, CONGRATULATIONS">>
-    <<elseif $health lte 5>><<set $health_descriptor to "ONLY NEARLY DEAD">>
-    <<elseif $health lte 10>><<set $health_descriptor to "MERELY GRIEVOUSLY WOUNDED">>
-    <<elseif $health lte 15>><<set $health_descriptor to "DISASTROUSLY INJURED">>
-    <<elseif $health lte 20>><<set $health_descriptor to "HORRIBLY SLIGHTLY HURT">>
-    <<elseif $health lte 25>><<set $health_descriptor to "(UN)FORTUNATELY HEALTHY">>
+<<if $health[0] == 0>><<set $health[1] to "A SUCCESSFUL DEATH, CONGRATULATIONS">>
+    <<elseif $health[0] lte 5>><<set $health[1] to "ONLY NEARLY DEAD">>
+    <<elseif $health[0] lte 10>><<set $health[1] to "MERELY GRIEVOUSLY WOUNDED">>
+    <<elseif $health[0] lte 15>><<set $health[1] to "DISASTROUSLY INJURED">>
+    <<elseif $health[0] lte 20>><<set $health[1] to "HORRIBLY SLIGHTLY HURT">>
+    <<elseif $health[0] lte 25>><<set $health[1] to "(UN)FORTUNATELY HEALTHY">>
 <</if>>
-<<if def $health>><hr><<print $health_descriptor>><</if>>
+<<if $health[0] gte 0>><hr><<print $health[1]>><</if>>
 
 
 :: StorySubtitle [nobr]
