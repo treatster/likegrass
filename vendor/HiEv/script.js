@@ -7,10 +7,3 @@ window.Flag = function (Fnam) {
     };
     return false;
 };
-
-//custom save titles
-Config.saves.onSave = function (save, details) {
-    if (details.type === "slot") {
-        save.title = prompt("Enter Save Slot Title:", save.title);
-    }
-};

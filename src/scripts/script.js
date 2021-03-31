@@ -37,3 +37,14 @@ postrender.quotes = function(passage, content, task) {
 	}
 	processTextNodes(passage);
 };
+
+Config.saves.onSave = function (save, details) {
+	if (details.type === "slot") {
+		save.title = prompt("Enter Save Slot Title:", save.title);
+	}
+};
+
+Config.saves.onLoad = function (save) {
+	console.log("Loaded game title: " + save.title);
+	console.log("Loaded game version: " + save.version);
+};
