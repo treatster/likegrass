@@ -47,4 +47,4 @@ Config.saves.onSave = function (save, details) {
 Config.saves.onLoad = function (save) {
 	console.log("Loaded game title: " + save.title);
 	console.log("Loaded game version: " + save.version);
-};
+};	
